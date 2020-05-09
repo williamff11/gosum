@@ -1,8 +1,7 @@
 steps:
-  - id: go_version
-    name: "gcr.io/cloud-builders/go"
-    args: ["version"]
-    env: ["GOPATH=."]
+  - id: "Run Composer"
+    name: "gcr.io/cloud-builders/docker"
+    args: ["push", "-t", "williamfreire/gogcp"]
 
   - id: go_test
     name: "gcr.io/cloud-builders/go"
