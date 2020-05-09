@@ -1,5 +1,5 @@
 steps:
-  - id: "Run test sum_test.go"
+  - id: go_version
     name: "gcr.io/cloud-builders/go"
-    args: ["go", "test", "sum_test.go"]
-
+    args: ["version"]
+    env: ["GOPATH=."]
