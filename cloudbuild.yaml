@@ -1,8 +1,4 @@
 steps:
-  - id: "Push image"
-    name: "gcr.io/cloud-builders/docker"
-    args: ["push", "williamfreire/gogcp"]
-
   - id: go_test
     name: "gcr.io/cloud-builders/go"
     args: ["test","sum_test.go"]
