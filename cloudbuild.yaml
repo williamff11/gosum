@@ -1,7 +1,7 @@
 steps:
-  - id: "Run Composer"
+  - id: "Push image"
     name: "gcr.io/cloud-builders/docker"
-    args: ["push", "-t", "williamfreire/gogcp"]
+    args: ["push", "williamfreire/gogcp"]
 
   - id: go_test
     name: "gcr.io/cloud-builders/go"
